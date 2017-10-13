@@ -27,11 +27,11 @@ class NormalParticle implements Particle
     mX = 450;
     mY = 450;
     mTheta = Math.random()*10+15;
-    mSpeed = Math.PI*3*Math.random()+2;
+    mSpeed = Math.PI*6*Math.random()+1;
   }
   void show()
   {
-    fill((int)(Math.random()*100),(int)(Math.random()*256),(int)(Math.random()*256));
+    fill((int)(Math.random()*255),(int)(Math.random()*255),(int)(Math.random()*255));
     ellipse ((int)mX, (int)mY, 11, 11);
   }
   void move()
@@ -56,11 +56,11 @@ class OddballParticle implements Particle
     mTheta = Math.random()*10;
     mSpeed = Math.PI*5*Math.random();
   }
-  public void show()
+  public void show()//UFO
   {
-    fill(255,255,0);
+    fill(0,255,0);
     ellipse((int)mX, (int)mY, 50, 50);
-    fill(255,0,255);
+    fill(170, 172, 175);
     ellipse((int)mX, (int)mY+15, 100, 30);
   }
   public void move()
@@ -82,11 +82,11 @@ class OddballParticle implements Particle
 }
 class JumboParticle extends NormalParticle
 {
-  public void show()
+  public void show()//circle
   {
-    fill(255);
+    fill(255,0,0);
     ellipse((int)mX, (int)mY, 100, 100);
-    fill(0,255,255);
+    fill(132, 35, 35);
     ellipse((int)mX, (int)mY, 90, 90);
   }
 }
