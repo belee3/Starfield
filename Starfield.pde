@@ -12,7 +12,7 @@ void setup()
 }
 void draw()
 {
-  background(30,30,30);
+  background(10,10,10);
   for (int i = 0; i<pGroup.length; i++)
   {
     pGroup[i].show();
@@ -82,11 +82,11 @@ class OddballParticle implements Particle
 }
 class JumboParticle extends NormalParticle
 {
-  public void show()//circle
+  public void show()//meteor
   {
     fill(255,0,0);
     ellipse((int)mX, (int)mY, 100, 100);
     fill(132, 35, 35);
-    ellipse((int)mX, (int)mY, 90, 90);
+    ellipse((int)mX, (int)mY, 80, 80);
   }
 }
